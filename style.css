@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4, #fbc2eb);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: radial-gradient(circle, #ff6f91, #ff4757);
+    color: white;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3.5em;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    color: #ffd700;
+}
+
+header h1 span {
+    color: white;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.scroll-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #ffd700;
+    color: #ff4757;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-btn:hover {
+    background: white;
+    color: #ff4757;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+section {
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #ff4757;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.img-responsive {
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Kiss Animation */
+.kiss-animation {
+    text-align: center;
+    font-size: 2em;
+    animation: floatKisses 3s infinite ease-in-out;
+}
+
+@keyframes floatKisses {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Interactive Section */
+.interactive {
+    text-align: center;
+    margin: 30px 0;
+}
+
+#heartButton {
+    background: #ff4757;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#heartButton:hover {
+    background: #ff6f91;
+    transform: scale(1.1);
+}
+
+.heart-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.heart {
+    font-size: 2em;
+    margin: 5px;
+    animation: popHeart 0.5s ease-in-out;
+}
+
+@keyframes popHeart {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ff4757;
+    color: white;
+    font-size: 1.2em;
+}
